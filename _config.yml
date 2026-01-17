@@ -6,27 +6,28 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: zh-CN
 
 # Change to your timezone › https://zones.arilyn.cc
-timezone:
+timezone: Asia/Singapore
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Kevin's Tech Blog                          # 博客标题
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: 技术学习与项目开发记录                      # 副标题
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: >-                                    # 网站描述（用于 SEO）
+  记录 Python 开发、Git 使用、项目经验等技术内容。
+  分享学习心得，记录成长历程。
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://kevinchen202008-cmyk.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username:  kevinchen202008-cmyk                   # 你的 GitHub 用户名
 
 twitter:
   username: twitter_username # change to your Twitter username
@@ -34,12 +35,12 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Kevin Chen                                 # 你的名字
+  email: kevin.chen202008@gmail.com               # 你的邮箱
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    # 第一个链接会作为版权声明的链接
+    - https://github.com/kevinchen202008-cmyk
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -85,10 +86,10 @@ pageviews:
 #
 # Available options:
 #
-#     light — Use the light color scheme
+#     light — Use the light color stheme_modecheme
 #     dark — Use the dark color scheme
 #
-theme_mode: # [light | dark]
+theme_mode: dual  # [light | dark]
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
@@ -98,7 +99,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar:/assets/img/avatar.jpg    # /assets/img/avatar.jpg   
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
