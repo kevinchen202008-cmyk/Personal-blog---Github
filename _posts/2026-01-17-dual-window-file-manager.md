@@ -29,11 +29,11 @@ tags: [python, git, 文件管理, 项目]
 
 ### GUI 框架
 考虑了几个选项：
-- **Tkinter** - Python 标准库，简单易用 ✅
-- PyQt5 - 功能强大，但学习曲线陡峭
+- Tkinter - Python 标准库，简单易用
+- **PyQt5** - 功能强大，跨平台性好 ✅
 - Kivy - 适合移动端
 
-最终选择 **Tkinter**，因为项目需求不复杂，Tkinter 完全够用。
+最终选择 **PyQt5**，因为它提供了更强大的 UI 组件和更好的视觉效果，能够实现专业的双窗口布局和丰富的交互功能。
 
 ## 今天的工作
 
@@ -59,22 +59,22 @@ local_file_manager/
 └── README.md        # 项目说明文件
 ```
 
-### 3. 第一个窗口
+### 3. 程序框架搭建
 
-使用 Tkinter 创建了程序的主窗口：
+使用 PyQt5 创建了程序的主窗口和双窗口布局：
 
 ```python
-import tkinter as tk
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from ui.main_window import MainWindow
 
-root = tk.Tk()
-root.title("双窗口文件管理程序")
-
-# TODO: 添加菜单、工具栏、状态栏等组件
-
-root.mainloop()
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec_())
 ```
 
-接下来将继续完善界面和功能。
+采用 MVC 模式架构，分离视图（UI）、模型（数据）和控制逻辑，模块化设计便于维护和扩展。
 
 ## 更新进展
 
