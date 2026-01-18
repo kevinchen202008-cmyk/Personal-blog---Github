@@ -1,6 +1,6 @@
 ---
 title: 我的第一篇技术博客
-date: 2025-01-17 22:00:00 +0800
+date: 2026-01-17 22:00:00 +0800
 categories: [博客, 教程]
 tags: [github, jekyll, blog]
 pin: true
