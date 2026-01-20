@@ -77,7 +77,7 @@ analytics:
 
 # Page views settings
 # 页面浏览量统计配置
-# 选项：'goatcounter' (已配置，稳定可靠) 或 'busuanzi' (不蒜子，无需注册，但 GitHub Pages 不支持自定义插件)
+# 选项：'goatcounter' (已配置，Chirpy 原生支持，推荐) 或 'busuanzi' (不蒜子，GitHub Pages 不支持自定义插件)
 pageviews:
   provider: goatcounter # [goatcounter | busuanzi]
 
