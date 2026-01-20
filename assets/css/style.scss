@@ -3,7 +3,7 @@
 
 @import "jekyll-theme-chirpy";
 
-/* 去掉文章底部“上一篇/下一篇”导航区的上下边框 */
+/* 去掉文章底部"上一篇/下一篇"导航区的上下边框 */
 .post-navigation {
   border-top: none !important;
   border-bottom: none !important;
@@ -14,15 +14,4 @@
 .post-navigation a {
   border: none !important;
   box-shadow: none !important;
-}
-
-{
-  "cells": [],
-  "metadata": {
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "nbformat": 4,
-  "nbformat_minor": 2
 }
