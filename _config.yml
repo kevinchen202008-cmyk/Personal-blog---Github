@@ -113,21 +113,20 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  # 评论系统配置 - 使用 Giscus（基于 GitHub Discussions）
-  # 配置步骤：
-  # 1. 访问 https://giscus.app 获取配置
-  # 2. 在 GitHub 仓库设置中启用 Discussions 功能
-  # 3. 填写下面的配置信息
-  provider: giscus # [disqus | utterances | giscus]
+  # 评论系统配置
+  #
+  # ✅ 默认启用 Utterances（基于 GitHub Issues），无需 repo_id/category_id，提交后即可使用评论/回复。
+  # 如需切换到 Giscus（基于 GitHub Discussions，体验更好、支持更丰富），再把 provider 改为 giscus 并补齐参数即可。
+  provider: utterances # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo: kevinchen202008-cmyk/kevinchen202008-cmyk.github.io # <gh-username>/<repo>
+    issue_term: pathname # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
-  # 获取配置：访问 https://giscus.app，输入仓库信息即可获取以下参数
+  # 获取配置：访问 https://giscus.app，输入仓库信息即可获取以下参数（可选）
   giscus:
     repo: kevinchen202008-cmyk/kevinchen202008-cmyk.github.io # <gh-username>/<repo>
     repo_id: # 从 giscus.app 获取
