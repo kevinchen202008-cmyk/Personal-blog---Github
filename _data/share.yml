@@ -2,32 +2,32 @@
 #  Icons from <https://fontawesome.com/>
 
 platforms:
-  # 微信 - 使用二维码分享（通过第三方服务生成）
-  - type: WeChat
-    icon: "fab fa-weixin"
-    link: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=URL"
-
   # 微博
   - type: Weibo
     icon: "fab fa-weibo"
     link: "https://service.weibo.com/share/share.php?title=TITLE&url=URL"
 
-  # 知乎 - 分享到想法
+  # 微信 - 使用二维码分享
+  - type: WeChat
+    icon: "fab fa-weixin"
+    link: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=URL"
+
+  # 知乎
   - type: Zhihu
     icon: "fab fa-zhihu"
     link: "https://www.zhihu.com/question/waiting?title=TITLE&url=URL"
 
-  # B站（哔哩哔哩）- 分享到动态
+  # B站
   - type: Bilibili
     icon: "fab fa-bilibili"
     link: "https://t.bilibili.com/?title=TITLE&url=URL"
 
-  # 小红书 - 使用通用分享链接（用户需手动复制）
+  # 小红书
   - type: Xiaohongshu
     icon: "fas fa-heart"
     link: "URL"
 
-  # 抖音 - 使用通用分享链接（用户需手动复制）
+  # 抖音
   - type: Douyin
     icon: "fab fa-tiktok"
     link: "URL"
