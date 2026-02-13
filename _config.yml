@@ -162,8 +162,8 @@ pwa:
 
 paginate: 10
 
-# The base URL of your site
-baseurl: ""
+# The base URL of your site (项目站需与仓库名一致，用户站改为 "")
+baseurl: "/Personal-blog---Github"
 
 # ------------ The following options are not recommended to be modified ------------------
 
