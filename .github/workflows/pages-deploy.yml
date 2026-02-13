@@ -45,24 +45,8 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
 
-      - name: Set baseurl for project site
-        id: baseurl
-        run: |
-          BASE_PATH="${{ steps.pages.outputs.base_path }}"
-          if [ -n "$BASE_PATH" ]; then
-            echo "baseurl: \"$BASE_PATH\"" > _config_baseurl.yml
-            echo "base_path=$BASE_PATH" >> $GITHUB_OUTPUT
-          else
-            echo "base_path=" >> $GITHUB_OUTPUT
-          fi
-
       - name: Build site
-        run: |
-          if [ -f _config_baseurl.yml ]; then
-            bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}" --config _config.yml,_config_baseurl.yml
-          else
-            bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
-          fi
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
 
@@ -72,10 +56,16 @@ jobs:
             \-\-disable-external \
             \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/https%3A%2F%2F/,/\/assets\/img\/favicons\//,/\/assets\/css\//,/\/assets\/js\//,/\/app\.min\.js/"
 
+      - name: Verify build output
+        run: |
+          echo "base_path=${{ steps.pages.outputs.base_path }}"
+          ls -la _site
+          test -f _site/index.html && echo "index.html OK" || (echo "ERROR: no index.html" && exit 1)
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site${{ steps.pages.outputs.base_path }}"
+          path: _site
 
   deploy:
     environment:
