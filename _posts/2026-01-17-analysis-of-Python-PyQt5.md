@@ -3,6 +3,7 @@ title: Python + PyQt5 开发 Windows 本地工具的优劣势分析
 date: 2026-01-17 22:00:00 +0800
 categories: [技术分析, Python]
 tags: [python, pyqt5, windows, 桌面应用, 开发工具, qt]
+slug: analysis-of-python-pyqt5
 ---
 
 使用 Python + PyQt5 开发 Windows 本地工具是一个非常成熟且流行的选择，特别适合开发效率优先、需要结合 Python 强大生态（如数据处理、自动化脚本、AI 模型调用）的场景。

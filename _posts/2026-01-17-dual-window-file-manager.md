@@ -3,6 +3,7 @@ title: 双窗口文件管理程序 - 项目初始化
 date: 2026-01-17 22:30:00 +0800
 categories: [项目开发, Python]
 tags: [python, git, 文件管理, 项目]
+slug: dual-window-file-manager
 ---
 
 今天开始了一个新项目：**本地双窗口文件管理程序**。
