@@ -1,0 +1,26 @@
+{%- comment -%}
+  项目站 baseurl 下，为所有站内绝对路径链接加上 base path，避免 404。
+  由 head.html 末尾 include，在 DOM 加载后通过脚本修正 href。
+{%- endcomment -%}
+{%- if site.baseurl != "" and site.baseurl != nil -%}
+<script>
+(function() {
+  var base = {{ site.baseurl | jsonify }};
+  if (!base) return;
+  base = base.replace(/\/$/, '');
+  function fixLinks() {
+    document.querySelectorAll('a[href^="/"]').forEach(function(a) {
+      var href = a.getAttribute('href');
+      if (href.indexOf(base) === 0) return;
+      if (href.indexOf('//') === 0 || href === '/#' || href === '#') return;
+      a.setAttribute('href', base + href);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fixLinks);
+  } else {
+    fixLinks();
+  }
+})();
+</script>
+{%- endif -%}
