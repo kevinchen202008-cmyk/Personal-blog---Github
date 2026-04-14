@@ -832,6 +832,7 @@ Hooks 是在特定事件发生时自动执行的 Shell 命令，让 Claude Code 
 
 ① 文件修改后自动 Lint
 
+```json
 // .claude/settings.json
 
 {
@@ -865,11 +866,13 @@ Hooks 是在特定事件发生时自动执行的 Shell 命令，让 Claude Code 
   }
 
 }
+```
 
  
 
 ② 文件修改后自动跑测试
 
+```json
 // 适合在重构阶段使用，每次改动立即验证
 
 {
@@ -903,11 +906,13 @@ Hooks 是在特定事件发生时自动执行的 Shell 命令，让 Claude Code 
   }
 
 }
+```
 
  
 
 ③ 任务完成后系统通知（macOS）
 
+```json
 {
 
   "hooks": {
@@ -935,11 +940,13 @@ Hooks 是在特定事件发生时自动执行的 Shell 命令，让 Claude Code 
   }
 
 }
+```
 
  
 
 ④ Java 编译后实时检查错误
 
+```json
 // 后端开发时，每次文件改动立即编译验证
 
 {
@@ -973,6 +980,7 @@ Hooks 是在特定事件发生时自动执行的 Shell 命令，让 Claude Code 
   }
 
 }
+```
 
  
 
@@ -1026,7 +1034,6 @@ claude --worktree feature-payment
 
 # 终端 2：审查会话（全新上下文，不带实现过程）
 
-```
 claude
 
 > 审查 @src/payment/ 下最近一次 git commit 的改动，
@@ -1034,6 +1041,7 @@ claude
   重点检查：边界情况、安全隐患、与现有代码风格一致性。
 
   给出必须修复 / 建议修复 / 可选改进三级反馈。
+```
 
   
 
