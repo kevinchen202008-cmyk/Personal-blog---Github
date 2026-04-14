@@ -5,6 +5,26 @@ categories: [开发者工具, AI]
 tags: [Claude Code, AI Agent, 终端工具, 效能提升]
 ---
 
+<style>
+  pre {
+    background-color: #f6f8fa !important;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+  code {
+    background-color: #f6f8fa;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #24292e;
+  }
+  pre code {
+    background-color: transparent !important;
+    padding: 0;
+    color: inherit;
+  }
+</style>
+
 很多开发者用了 Claude Code 一段时间后，感觉「好像也没那么神奇」——写出来的代码时对时错，改着改着把不该动的文件也改了，长时间对话后回答开始偏题。问题不在工具本身，在于缺少一套正确的使用框架。
 
 这份《Claude Code 完全新手指南》共 12 章，从最基础的安装配置讲起，深入 Agent Loop 工作原理、上下文管理策略、CLAUDE.md 项目记忆配置，再到 Subagents 专用子代理、Hooks 自动化触发器、Worktree 并行任务隔离等进阶功能，最后提供三套直接可用的实战 SOP：老项目重构如何在不破坏线上功能的前提下分步推进、新需求如何从一句话变成可执行规格文档再到并行开发交付、全新项目如何从架构决策到 CI/CD 接入一次做对。附 30 余个提示词模板，所有内容均基于 2026 年最新版本。
@@ -18,10 +38,6 @@ Claude Code
 从 0 到真正用好 AI 编程 Agent
 
 安装 · 配置 · 实战 SOP · Subagents · Hooks · 最佳实践  ·  2026
-
-|  |
-| --- |
-| 本指南完整覆盖  •第一章  认识 Claude Code——Agentic 编程工具的本质  •第二章  安装与账号配置（macOS / Linux / Windows / WSL）  •第三章  核心概念——Agent Loop、上下文管理、权限模式  •第四章  快速入门——30 分钟完成第一个真实任务  •第五章  CLAUDE.md——让 Claude 记住你的项目规范  •第六章  完整命令速查手册（斜杠命令 + 快捷键）  •第七章  进阶技巧——Plan Mode、提示词公式、MCP 集成  •第八章  Subagents——独立上下文的专用 AI 助手（新增）  •第九章  Hooks——自动化触发器配置（新增）  •第十章  Worktree——并行任务隔离工作区（新增）  •第十一章  实战 SOP——老项目重构 / 快速迭代 / 新项目研发（新增）  •第十二章  常见错误与避坑指南  •附录  速查卡 + 专业级配置参考 |
 
  
 
@@ -1571,15 +1587,15 @@ C. 推荐 .claude/ 目录结构
 
 ```
 
-D. 官方资源
+### D. 官方资源
 
-•完整文档（含中文）：code.claude.com/docs
+• [完整文档（含中文）：code.claude.com/docs](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
 
-•Anthropic Console：console.anthropic.com
+• [Anthropic Console：console.anthropic.com](https://console.anthropic.com)
 
-•社区资源：github.com/hesreallyhim/awesome-claude-code
+• [社区资源：github.com/hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
 
-•Anthropic 官方 YouTube：安装演示和功能介绍视频
+• [Anthropic 官方 YouTube：安装演示和功能介绍视频](https://www.youtube.com/@Anthropic)
 
  
 
