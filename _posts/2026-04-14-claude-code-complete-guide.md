@@ -6,22 +6,22 @@ tags: [Claude Code, AI Agent, 终端工具, 效能提升]
 ---
 
 <style>
-  pre {
+  .highlight pre, pre {
     background-color: #f6f8fa !important;
-    padding: 16px;
-    border-radius: 6px;
-    overflow-x: auto;
+    padding: 16px !important;
+    border-radius: 6px !important;
+    overflow-x: auto !important;
   }
-  code {
-    background-color: #f6f8fa;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color: #24292e;
+  .highlight code, p > code, li > code {
+    background-color: #f6f8fa !important;
+    padding: 2px 4px !important;
+    border-radius: 4px !important;
+    color: #24292e !important;
   }
-  pre code {
+  .highlight pre code, pre code {
     background-color: transparent !important;
-    padding: 0;
-    color: inherit;
+    padding: 0 !important;
+    color: inherit !important;
   }
 </style>
 
@@ -1451,7 +1451,7 @@ GitHub Actions CI 配置生成提示词
 
  
 
-附录  速查卡与配置参考
+## 附录  速查卡与配置参考
 
 A. 完整斜杠命令速查
 
