@@ -288,9 +288,9 @@ claude --model claude-opus-4-6
 > /model opus
 > /model sonnet
 > /model haiku
+```
   
 ## 第四章  快速入门——30 分钟第一个任务
-```
 
 
 
