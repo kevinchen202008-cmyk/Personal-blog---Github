@@ -995,10 +995,10 @@ Hooks 是在特定事件发生时自动执行的 Shell 命令，让 Claude Code 
 
  
 
+ 
 
 > 📌 **Hooks 使用原则**  
 > Hooks 命令要快（30 秒内），避免阻塞 Claude 的工作流。  用 matcher 精确匹配触发条件，避免每次操作都触发耗时命令。  调试 Hooks 时，先用 echo 命令测试触发时机是否正确。
-
 ## 🌿 第十章  Worktree——并行任务隔离 {#第十章--worktree并行任务隔离}
 
 ### 10.1  什么是 Worktree？
