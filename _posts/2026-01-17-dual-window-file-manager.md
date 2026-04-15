@@ -1,18 +1,33 @@
 ---
-title: 双窗口文件管理程序 - 项目初始化
-date: 2026-01-17 22:30:00 +0800
-categories: [项目开发, Python]
-tags: [python, git, 文件管理, 项目]
-slug: dual-window-file-manager
----
+
+<style>
+  .highlight pre, pre {
+    background-color: #f6f8fa !important;
+    padding: 16px !important;
+    border-radius: 6px !important;
+    overflow-x: auto !important;
+  }
+  .highlight code, p > code, li > code {
+    background-color: #f6f8fa !important;
+    padding: 2px 4px !important;
+    border-radius: 4px !important;
+    color: #24292e !important;
+  }
+  .highlight pre code, pre code {
+    background-color: transparent !important;
+    padding: 0 !important;
+    color: inherit !important;
+  }
+</style>
+
 
 今天开始了一个新项目：**本地双窗口文件管理程序**。
 
-## 项目背景
+## 📖 项目背景
 
 在日常工作中，经常需要在不同文件夹之间复制、移动文件，Windows 自带的资源管理器虽然功能强大，但在某些场景下不够高效。因此决定开发一个双窗口的文件管理工具。
 
-## 项目目标
+## 🎯 项目目标
 
 - 🎯 双窗口界面，方便文件对比和操作
 - 🎯 快速的文件浏览和搜索
@@ -20,7 +35,7 @@ slug: dual-window-file-manager
 - 🎯 支持快捷键操作
 - 🎯 简洁美观的界面
 
-## 技术选型
+## 🔧 技术选型
 
 ### 编程语言
 选择 **Python**，原因：
@@ -36,7 +51,7 @@ slug: dual-window-file-manager
 
 最终选择 **PyQt5**，因为它提供了更强大的 UI 组件和更好的视觉效果，能够实现专业的双窗口布局和丰富的交互功能。
 
-## 今天的工作
+## 🚀 今天的工作
 
 ### 1. Git 仓库初始化
 
@@ -77,7 +92,7 @@ if __name__ == '__main__':
 
 采用 MVC 模式架构，分离视图（UI）、模型（数据）和控制逻辑，模块化设计便于维护和扩展。
 
-## 更新进展
+## 📢 更新进展
 
 ### 本地双窗口文件管理程序
 

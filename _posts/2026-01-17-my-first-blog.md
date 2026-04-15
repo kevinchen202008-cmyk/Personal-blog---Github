@@ -1,23 +1,36 @@
 ---
-title: 我的第一篇技术博客
-date: 2026-01-17 22:00:00 +0800
-categories: [博客, 教程]
-tags: [github, jekyll, blog]
-pin: true
----
 
-# 欢迎来到我的技术博客！
+<style>
+  .highlight pre, pre {
+    background-color: #f6f8fa !important;
+    padding: 16px !important;
+    border-radius: 6px !important;
+    overflow-x: auto !important;
+  }
+  .highlight code, p > code, li > code {
+    background-color: #f6f8fa !important;
+    padding: 2px 4px !important;
+    border-radius: 4px !important;
+    color: #24292e !important;
+  }
+  .highlight pre code, pre code {
+    background-color: transparent !important;
+    padding: 0 !important;
+    color: inherit !important;
+  }
+</style>
+
 
 今天成功搭建了自己的技术博客，使用的是 GitHub Pages + Jekyll + Chirpy 主题。
 
-## 为什么要写博客？
+## 💡 为什么要写博客？
 
 1. **记录学习过程** - 把学到的知识整理成文章，加深理解
 2. **分享技术经验** - 帮助遇到同样问题的人
 3. **展示项目成果** - 记录自己的项目开发历程
 4. **提升表达能力** - 通过写作提高技术表达能力
 
-## 博客搭建过程
+## 🛠️ 博客搭建过程
 
 ### 选择方案
 
@@ -37,7 +50,7 @@ pin: true
 4. 写第一篇文章
 5. 推送到 GitHub
 
-## 我的项目
+## 📂 我的项目
 
 最近在开发一个**双窗口文件管理程序**，使用 Python 实现。
 
@@ -45,7 +58,7 @@ pin: true
 
 后续会在博客中分享开发过程和技术细节。
 
-## 技术栈
+## 🧰 技术栈
 
 目前主要学习和使用的技术：
 
@@ -54,14 +67,14 @@ pin: true
 - **前端**：HTML, CSS, JavaScript
 - **工具**：VS Code, PyCharm
 
-## 下一步计划
+## 📋 下一步计划
 
 - [ ] 完善博客配置（评论系统、统计等）
 - [ ] 写项目开发日志
 - [ ] 分享学习笔记
 - [ ] 整理技术文档
 
-## 总结
+## ✅ 总结
 
 搭建博客的过程让我学到了很多：
 
