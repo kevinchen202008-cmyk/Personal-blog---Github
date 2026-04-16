@@ -824,7 +824,7 @@ model: inherit
 ```
 
 
-## 第九章  Hooks——自动化触发器 {#第九章--hooks自动化触发器}
+## 第九章  Hooks——自动化触发器
 
 ### 9.1  什么是 Hooks？
 
