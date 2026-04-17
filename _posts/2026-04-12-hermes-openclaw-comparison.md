@@ -38,7 +38,9 @@ tags: [Hermes Agent, OpenClaw, AI Agent, 架构对比]
 - [🏗️ 架构组件对比](#️-架构组件对比)
 - [⚡ 关键技术特性对比](#-关键技术特性对比)
 - [📊 综合评估](#-综合评估)
-- [✅ 结论](#-结论)
+- [✅ 结论与未来展望](#-结论与未来展望)
+  - [结论](#结论)
+  - [未来展望](#未来展望)
 
 ---
 
@@ -351,8 +353,8 @@ Hermes Agent 和 OpenClaw 通过不同的技术路径，为构建复杂的自主
 
 ---
 
-**参考资源**：
-- [Hermes Agent 官方文档](https://github.com/nous-research/hermes-agent)
-- [OpenClaw GitHub 仓库](https://github.com/nicepkg/openclaw)
+## 📚 参考资源
+- [Hermes Agent 官方文档](https://github.com/NousResearch/hermes-agent)
+- [OpenClaw GitHub 仓库](https://github.com/openclaw/openclaw)
 - [AI Agent 架构设计指南](https://arxiv.org/abs/2308.00352)
 - [工具调用与 LLM 集成最佳实践](https://www.anthropic.com/research/tool-use)
